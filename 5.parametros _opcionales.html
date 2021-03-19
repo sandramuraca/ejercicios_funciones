@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Los parametros opciones son un valor que tienen por defecto los parametros de la funcion,estos se escriben de derecha a izquierda.Se pueden utilizar como una configuracion habitual
+        const conversor = (temp , unidad = "F",presion = 19 ,humedad = 20 )=>{
+        //implementacion falta
+        return `La temperatura es:${temp} en ${unidad} presion:${presion} humedad:${humedad}`
+        }
+        console.log(
+        conversor(15),
+        conversor(30,"C"),
+        conversor(45,"C",78),
+        conversor(30,"C",56,28),
+        );
+
+    </script>
+</body>
+</html>
