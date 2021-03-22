@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const caluladora = (cuenta,a, b ) =>{
+        console.log(cuenta);
+        const resultado = cuenta(a,b);
+        console.log(resultado);
+        //alert(resultado);
+        }
+
+        const multiplicar = (numeroA,numeroB)=>numeroA*numeroB;
+        const sumar = (a,b) => a+b;
+        const concatenar = (a,b) => `Se ingreso ${a},${b} `;
+        caluladora(multiplicar,10,20);
+        caluladora(sumar,10,20);
+        caluladora(concatenar,10,20);
+        caluladora((a,b)=>a/b,10,20);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Usando las funciones anteriores (obtenerNombreCompleto, saludar y gritar), crear una función saludarGritando que tome como argumentos un nombre y un apellido y devuelva un saludo con signos de exclamación.
+
+        saludarGritando('Ada', 'Lovelace') // ¡Hola Ada Lovelace, un gusto conocerte!*/
+
+        // TUBERIA
+
+        const obtenerNombreCompleto = (nombre, apellido) => `${nombre} ${apellido}`;
+        
+        const saludar = (nombre) => `Hola ${nombre}, un gusto conocerte`;
+    
+               
+        const gritar = (palabra) => `¡${palabra}!`;
+      
+
+        const saludarGritando = (nombre, apellido) => {
+            const nombreCompleto = obtenerNombreCompleto (nombre, apellido);
+            const saludo = saludar (nombreCompleto);
+            const grito = gritar (saludo);
+            return grito
+        };
+
+        alert(saludarGritando ("Ada", "Lovelace"));
+        
+    </script>
+</body>
+</html>
