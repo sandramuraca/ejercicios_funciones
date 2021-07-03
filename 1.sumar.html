@@ -15,12 +15,17 @@
         //sumar(3, -5) // -2
         //FORMA TRADICIONAL
 
+        let dato1 = Number(prompt("ingrese el primer número"));
+        let dato2 = Number(prompt("ingrese el primer número"));
+
+        let resSuma = sumar(dato1, dato2)
+
         function sumar(num1, num2){
             let resultado = (num1 + num2);
 
             alert(resultado)
-
         }
+        console.log(`el resultado de la suma es ${resSuma}`);
 
         sumar(2, 3);
         sumar(1.2, 3.4);
